@@ -242,7 +242,7 @@ ul {
     display: flex;
     height: 500px;
     width: 100%;
-    padding-top: 300px;
+    margin-top: 200px;
     justify-content: center;
 }
 
@@ -451,10 +451,6 @@ section {
         overflow-y: auto;
     }
 
-    .contact_section {
-        overflow-y: unset;
-    }
-
     #work_section_svg {
         display: none;
     }
@@ -486,6 +482,10 @@ section {
 
     .experience {
         margin-top: 100px;
+    }
+
+    .contact {
+        padding-top: 200px;
     }
 
     .contacts {
