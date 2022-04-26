@@ -387,9 +387,7 @@ section {
 }
 
 .contact__div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -404,7 +402,7 @@ section {
     color: white;
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto;
     width: 600px;
 }
 
@@ -445,12 +443,13 @@ section {
         display: none;
     }
 
+    .main_sign {
+        margin: 0 auto;
+    }
+
     .work {
-        display: flex;
-        flex-direction: column;
+        margin: 0 auto;
         text-align: center;
-        justify-content: center;
-        align-items: center;
     }
 
     .header {
@@ -459,6 +458,10 @@ section {
 
     .experience {
         margin-top: 100px;
+    }
+
+    .contact__div {
+        display: block;
     }
 
     .contacts {
