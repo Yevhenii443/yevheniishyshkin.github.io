@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Courier New", serif;
+}
+
+body {
+    background-color: #20242C;
+}
+
+a {
+    color: inherit;
+}
+
+#sticky_header {
+    position: fixed;
+}
+
+.main__div {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: #102433;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    z-index: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav__bar li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav__bar li a {
+    color: white;
+    padding: 10px;
+    transition: 1.4s ease;
+}
+
+.nav__bar li a:hover {
+    background-color: #20347F;
+}
+
+.main__logo {
+    padding: 4px;
+}
+
+#about_section_svg {
+    stroke-dasharray: 650px;
+    stroke-dashoffset: 650px;
+}
+
+#experience_section_svg {
+    stroke-dasharray: 1050px;
+    stroke-dashoffset: 1050px;
+}
+
+#experience_section_svg:hover {
+    animation: link_animation 1s ease forwards;
+}
+
+#about_section_svg:hover {
+    animation: link_animation 1s ease forwards;
+}
+
+#contact_section_svg {
+    stroke-dasharray: 850px;
+    stroke-dashoffset: 850px;
+}
+
+#contact_section_svg:hover {
+    animation: link_animation 1s ease forwards;
+}
+
+#work_section_svg {
+    stroke-dasharray: 650px;
+    stroke-dashoffset: 650px;
+}
+
+#work_section_svg:hover {
+    animation: link_animation 1s ease forwards;
+}
+
+#welcome_logo {
+    animation: fill_color 1s forwards 2s;
+}
+
+#welcome_logo path:nth-child(1) {
+    stroke-dasharray: 122px;
+    stroke-dashoffset: 122px;
+    animation: line_animation 2s ease forwards;
+}
+
+#welcome_logo path:nth-child(2) {
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    animation: line_animation 2s ease forwards;
+}
+
+#welcome_logo path:nth-child(3) {
+    stroke-dasharray: 137px;
+    stroke-dashoffset: 137px;
+    animation: line_animation 2.5s ease forwards;
+}
+
+#welcome_logo path:nth-child(4) {
+    stroke-dasharray: 156px;
+    stroke-dashoffset: 156px;
+    animation: line_animation 2.5s ease forwards;
+}
+
+.contacts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+}
+
+#linkedin_link svg {
+    transition: 0.8s ease;
+}
+
+#linkedin_link svg:hover {
+    transition: 0.5s ease;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#github_link svg {
+    transition: 0.8s ease;
+}
+
+#github_link svg:hover {
+    transition: 0.5s ease;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#telegram_link svg {
+    transition: 0.8s ease;
+}
+
+#telegram_link svg:hover {
+    transition: 0.5s ease;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#email_link svg {
+    transition: 0.8s ease;
+}
+
+#email_link svg:hover {
+    transition: 0.5s ease;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.contact__me__button {
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #10BFCA;
+    padding: 14px;
+    transition: 1s ease;
+    margin-top: 60px;
+}
+
+.contact__me__button:hover {
+    transition: 1s ease;
+    background-color: #10BFCA;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes button_animation {
+    to {
+        fill: beige;
+    }
+}
+
+@keyframes link_animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes line_animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill_color {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #FFFFFF;
+    }
+}
+
+@keyframes div_appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.introduction__div {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.intro {
+    color: white;
+    width: 700px;
+    animation: div_appear 3s ease forwards;
+}
+
+#code {
+    white-space: pre-wrap;
+    font-weight: bold;
+    color: #10BFCA;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    scroll-snap-align: start;
+}
+
+.phrase__1 {
+    color: #10BFCA;
+}
+
+.phrase__2 {
+    margin-top: 10px;
+}
+
+.phrase__3 {
+    margin-top: 10px;
+}
+
+.python_text {
+    color: #10BFCA;
+    font-weight: bold;
+}
+
+.python_text2 {
+    color: #10BFCA;
+    font-weight: bold;
+}
+
+.experience__div {
+    font-family: "Courier New", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.division {
+    border: 1px solid #10BFCA;
+}
+
+.about_me_div {
+    color: #10BFCA;
+}
+
+.photo_and_techs {
+    width: 400px;
+    height: 600px;
+    border-bottom: 2px solid #10BFCA;
+    margin-top: 200px;
+}
+
+.experience {
+    color: white;
+    width: 1100px;
+    height: 500px;
+    margin-top: 140px;
+}
+
+.unit_factory_sign {
+    color: #10BFCA;
+    font-weight: bold;
+}
+
+.photo_and_techs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.first_ul li {
+    padding: 6px;
+}
+
+.second_ul li {
+    padding: 6px;
+}
+
+.techs {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my_photo {
+    margin-top: 20px;
+    border: 1px solid #10BFCA;
+    width: 220px;
+    align-self: center;
+    height: 220px;
+}
+
+#cor_medical_logo {
+    stroke-dasharray: 390px;
+    animation: holo_animation 3s linear infinite;
+}
+
+@keyframes holo_animation {
+    0% {
+        stroke-dashoffset: 800px;
+    }
+    50% {
+        stroke-dashoffset: 1px;
+    }
+    100% {
+        stroke-dashoffset: 800px;
+    }
+}
+
+.main_sign {
+    font-size: 24px;
+    width: 164px;
+}
+
+.work {
+    margin-top: 100px;
+    color: white;
+    width: 800px;
+}
+
+.work__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 170px;
+    align-self: center;
+}
+
+.contact__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.get_in_touch {
+    margin-top: 30px;
+    font-size: 60px;
+    color: #CCD3F5;
+    font-family: "Courier", serif;
+}
+
+.main_text_contact {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.contact {
+    margin-top: 300px;
+}
+
+@media (max-width: 600px) {
+    #experience_section_svg {
+        display: none;
+    }
+
+    .intro__section {
+        overflow-y: hidden;
+    }
+
+    .experience__section {
+        overflow-y: auto;
+    }
+
+    .work_section {
+        overflow-y: hidden;
+    }
+
+    .contact_section {
+        overflow-y: hidden;
+    }
+
+    #work_section_svg {
+        display: none;
+    }
+
+    #contact_section_svg {
+        display: none;
+    }
+
+    #about_section_svg {
+        display: none;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .experience {
+        margin-top: 100px;
+    }
+
+    .contacts {
+        gap: 0;
+        justify-content: normal;
+    }
+
+    .main_text_contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contacts {
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .experience {
+        text-align: center;
+    }
+
+    .photo_and_techs {
+        display: none;
+    }
+
+    .code {
+        display: none;
+    }
+}
