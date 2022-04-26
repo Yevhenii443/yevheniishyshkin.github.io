@@ -420,7 +420,7 @@ section {
     }
 
     .intro__section {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
     .experience__section {
@@ -428,11 +428,11 @@ section {
     }
 
     .work_section {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
     .contact_section {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
     #work_section_svg {
