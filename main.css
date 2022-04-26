@@ -505,11 +505,6 @@ section {
         padding-top: 100px;
     }
 
-    .contacts {
-        gap: 0;
-        justify-content: normal;
-    }
-
     .introduction__div {
         padding-top: 170px;
     }
@@ -527,7 +522,9 @@ section {
 
     .contacts {
         margin-top: 30px;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
     }
 
     .experience {
