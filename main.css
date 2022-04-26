@@ -407,7 +407,11 @@ section {
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     margin: 300px auto;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -458,10 +462,6 @@ section {
 
     .experience {
         margin-top: 100px;
-    }
-
-    .contact__div {
-        display: block;
     }
 
     .contacts {
