@@ -406,13 +406,17 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 270px auto;
+    margin: 200px auto;
     align-items: center;
 }
 
 @media (max-width: 600px) {
     #experience_section_svg {
         display: none;
+    }
+
+    .contact {
+        margin: 200px auto;
     }
 
     .intro__section {
