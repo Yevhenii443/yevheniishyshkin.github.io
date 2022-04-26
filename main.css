@@ -407,7 +407,7 @@ section {
 }
 
 .contact {
-    margin-top: 300px;
+    margin: 300px auto;
 }
 
 @media (max-width: 600px) {
