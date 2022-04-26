@@ -423,10 +423,6 @@ section {
         overflow-y: hidden;
     }
 
-    .introduction__div {
-        margin-top: 0;
-    }
-
     .experience__section {
         overflow-y: auto;
     }
